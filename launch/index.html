@@ -21,7 +21,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Material theme -->
-    <link href='bower_components/bootstrap-material-design/dist/css/material-wfont.min.css' rel="stylesheet">
+    <link href='../bower_components/bootstrap-material-design/dist/css/material-wfont.min.css' rel="stylesheet">
 
     <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">  
 
@@ -37,14 +37,35 @@
 
 	<div class="container" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 750px">
 		<center>
-			<p class="lead" id="prompt">Coming soon...</p>
-      <button type="button" class="btn btn-primary" onClick="preLaunch()"><i class="fa fa-refresh"></i></button>
+			<p class="lead" id="prompt">Click square button to generate a prompt</p>
+      <button type="button" class="btn btn-primary" onClick="changePrompt()"><i class="fa fa-refresh"></i></button>
       <button type="button" class="btn btn-flat" data-toggle="modal" data-target="#aboutModal"><i class="fa fa-question"></i></button>
       <hr />
     </center>
 	</div>
 
  
+ 
+    <!-- Submit modal -->
+    <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Submit an idea</h4>
+          </div>
+          <div class="modal-body">
+            <p>This simple little prompt generator is meant to spark big ideas. It takes high potential industries and encourages you to come up with startup ideas at the intersection of two of them.</p>
+            <p><input type="text" class="form-control" placeholder="A problem with INDUSTRY 2 is"></p>
+            <p><input type="text" class="form-control" placeholder="That we can solve with"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary disabled" data-dismiss="modal">Submit</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- About Modal -->
     <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -55,9 +76,8 @@
             <h4 class="modal-title" id="myModalLabel">What's this about then?</h4>
           </div>
           <div class="modal-body">
-            <p>It's not ready yet!</p>
-            <p>This little guy will grow to help people come up with big ideas by investigating the space in between two seemingly unrelated ones</p>
-            <p>If you want to get updates on the progress of ideasex, submit your email <a href="https://tinyletter.com/ideasex">here</a></p>
+            <p>This simple little prompt generator is meant to spark big ideas. It takes high potential industries and encourages you to come up with startup ideas at the intersection of two of them.</p>
+            <p>The industries come from YC's Request for Startups. This is as good a list as any if you're looking for the industries with ample opportunity to have an impact</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -71,7 +91,7 @@
 	<div class = "navbar navbar-fixed-bottom" style="background: rgba(0,0,0,0);">
       <div class = "container">
         <center>
-        	ideasex // Made with love by <a href="http://www.tonysheng.com">@tonysheng</a>
+        	Startup Idea Prompts // Made with love by <a href="http://www.tonysheng.com">@tonysheng</a>
         </center>
       </div>
     </div>
@@ -82,8 +102,8 @@
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
-    <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
     <script>
         $(document).ready(function() {
             $.material.init();

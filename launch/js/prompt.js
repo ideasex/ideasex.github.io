@@ -24,16 +24,7 @@ var industries = [
 	["Telecommunications", "#telecom"],	
 	];
 
-var teaserMessages = [
-	["Coming soon..."],
-	["Patience is a virtue"],
-	["Never cut a tree down in the wintertime"],
-	["Once you go in you always come out alive"],
-	["Dying is MainStream #MONEY"],
-	["Most trees are blue"],
-	["Lately people call me scoop life"],
-	["I build pyramids constantly"],
-	];
+
 
 function changePrompt() {
 // Pick random industry and name firstIndustry
@@ -46,11 +37,10 @@ function changePrompt() {
 	return document.getElementById("prompt").innerHTML = prompt;
 }
 
-function preLaunch() {
-	return document.getElementById("prompt").innerHTML = teaserMessages[Math.floor(Math.random()*teaserMessages.length)];
+function resetPrompt() {
+	var resetPrompt = "Click me to make ideas have the sexes";
+	return document.getElementById("prompt").innerHTML = "Click the button to generate a new prompt";
 }
-
-
 
 
 

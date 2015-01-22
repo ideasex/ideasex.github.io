@@ -1,31 +1,5 @@
-
-var industries = [
-	["Energy", "#energy"],
-	["Artificial Intelligence", "#ai"],
-	["Robotics", "#bots"],
-	["Biotech", "#biotech"],
-	["Healthcare", "#healthcare"],
-	["Pharmaceuticals", "#pharmaceuticals"],
-	["Food and Water", "#food"],
-	["Education", "#education"],
-	["Infrastructure", "#infrastructure"],
-	["Government", "#government"],
-	["Human Augmentation", "#augment"],
-	["Virtual Reality and Augmented Reality", "#ai"],
-	["Science", "#science"],
-	["Transportation and Housing", "#transport"],
-	["One Million Jobs", "#million"],
-	["Programming Tools", "#program"],
-	["Hollywood 2.0", "#hollywood"],
-	["Diversity", "#diversity"],
-	["Developing Countries", "#developing"],
-	["Enterprise Software", "#enterprise"],
-	["Financial Services", "#financial"],
-	["Telecommunications", "#telecom"],	
-	];
-
 var teaserMessages = [
-	["Coming soon..."],
+	["Use virtual reality to create remote operating rooms"],
 	["Patience is a virtue"],
 	["Never cut a tree down in the wintertime"],
 	["Once you go in you always come out alive"],

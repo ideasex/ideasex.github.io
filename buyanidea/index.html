@@ -1,0 +1,188 @@
+<head>
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-57629032-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This simple little prompt generator is meant to spark big ideas. It takes high potential industries and encourages you to come up with startup ideas at the intersection of two of them.">
+    <title>$5 Startup Ideas</title>
+    <link rel="icon" type="image/png" href="../img/1f4a1.png">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Material theme -->
+    <link href='../bower_components/bootstrap-material-design/dist/css/material-wfont.min.css' rel="stylesheet">
+
+    <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">  
+
+    <!-- JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!-- twemojiawesome -->
+    <link rel="stylesheet" href="../css/twemoji-awesome.css">  
+
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<div class="container" style="max-width: 750px">
+  
+    <div class="page-header">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Buy a startup idea for $5</h1>
+          <p class="lead">Skip one beer this week and have me come up with a startup idea for you instead</p>
+          <button class="btn btn-primary">One idea $5</button>
+          <button class="btn btn-primary">Three ideas $10</button>
+        </div>
+        <hr />
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>How it works</h2>
+          <p class="lead">Imagine yourself as the owner of a fresh new startup idea</p>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+      <center>
+        <div class="col-sm-4">
+          
+          <i class="twa twa-heart twa-5x"></i>
+          <p class="lead">Pick an industry from YC's "Request for Startups"</p>
+          <p>Example: healthcare</p>
+          
+        </div>
+        <div class="col-sm-4">
+
+          <i class="twa twa-heart twa-5x"></i>
+          <p class="lead">I think about it</p>
+          <p>Example: while I drink coffee</p>
+
+        </div>
+        <div class="col-sm-4">
+          <i class="twa twa-heart twa-5x"></i>
+          <p class="lead">You receive a startup idea in your inbox</p>
+          <p>Example: Use virtual reality to create remote operating rooms</p>
+        </div>
+      </center>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Why?</h2>
+          <p class="lead">
+          I quit my job in December and want to eventually start a company. I think it’s fun to come up with ideas. I need money to finance my projects. 
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>FAQ</h2>
+          <p class="lead">
+          <p class="lead">Q: Where do the ideas come from? A: I think of them. </p>
+          <p class="lead">Q: How do you come up with the ideas? A: I think about a problem in the space and imagine a solution for it.</p>
+          <p class="lead">Q: Can you guarantee nobody else is doing your idea? A: No. Somebody probably is, but I&rsquo;ll only send you ideas that I don&rsquo;t know of anybody doing.</p>
+          <p class="lead">Q: Will I be able to execute on the idea you send me? A: I don&rsquo;t know, but I sure hope so. </p>
+          <p class="lead">Q: Is my idea unique from everybody else&rsquo;s? A: I will try, but can&rsquo;t guarantee that. Depends on demand.</p>
+          <p class="lead">Q: How long will it take to get my idea? A: Within 24 hours, probably sooner. </p>
+          <p class="lead">Q: I can&rsquo;t do this idea. A: Not a question. But I just come up with the ideas. You execute.  </p>
+          <p class="lead">Other questions tweet me @tonysheng</p>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Who am you?</h2>
+          <p class="lead">Something</p>
+
+        </div>
+      </div>
+
+    </div>
+  
+	</div>
+
+ 
+ 
+    <!-- Submit modal -->
+    <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Submit an idea</h4>
+          </div>
+          <div class="modal-body">
+            <p>This simple little prompt generator is meant to spark big ideas. It takes high potential industries and encourages you to come up with startup ideas at the intersection of two of them.</p>
+            <p><input type="text" class="form-control" placeholder="A problem with INDUSTRY 2 is"></p>
+            <p><input type="text" class="form-control" placeholder="That we can solve with"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary disabled" data-dismiss="modal">Submit</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">What's this about then?</h4>
+          </div>
+          <div class="modal-body">
+            <p>This simple little prompt generator is meant to spark big ideas. It takes high potential industries and encourages you to come up with startup ideas at the intersection of two of them.</p>
+            <p>The industries come from YC's Request for Startups. This is as good a list as any if you're looking for the industries with ample opportunity to have an impact</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+	<!-- Footer -->
+	<div class = "navbar navbar-fixed-bottom" style="background: rgba(0,0,0,0);">
+      <div class = "container">
+        <center>
+        	Startup Idea Prompts // Made with love by <a href="http://www.tonysheng.com">@tonysheng</a>
+        </center>
+      </div>
+    </div>
+    <!-- end -->
+
+
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.material.init();
+        });
+    </script>
+  
+    <!-- prompt function -->
+    <script src="js/prompt.js"></script>
+</body>
+	
