@@ -11,7 +11,7 @@ var industries = [
 	["Infrastructure", "#infrastructure"],
 	["Government", "#government"],
 	["Human Augmentation", "#augment"],
-	["Virtual Reality and Augmented Reality", "#ai"],
+	["Virtual Reality and Augmented Reality", "#vrar"],
 	["Science", "#science"],
 	["Transportation and Housing", "#transport"],
 	["One Million Jobs", "#million"],

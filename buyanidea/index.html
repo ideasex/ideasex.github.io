@@ -46,17 +46,40 @@
           <p class="lead">Skip one beer or coffee this week. Instead pay me for a startup idea.</p>
       	<center>
       	<div class="col-sm-6">
+
+
+
       		
-			<h3>One startup idea<i class="twa twa-bulb"></i></h3>
-			<p class="lead">5 dollars <button id="oneIdea" class="btn btn-primary btn-lg">Buy one</button></p>
-			
-      	</div>
-      	<div class="col-sm-6">
-      		
-			<h3>Three startup ideas<i class="twa twa-bulb"></i><i class="twa twa-bulb"></i><i class="twa twa-bulb"></i></h3>
-			<p class="lead">10 dollars <button id="threeIdeas" class="btn btn-primary btn-lg btn-raised">Buy three</button></p>
+    			<h3>One startup idea<i class="twa twa-bulb"></i></h3>
+    			
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><p class="lead">5 dollars 
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="AMK4RHBWH5VDW">
+            <input type="submit" class="btn btn-primary btn-raised btn-lg" value="Buy one" border="0" name="submit">
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </p>
+            </form>
+          
+          	</div>
+          	<div class="col-sm-6">
+          		
+    			<h3>Three startup ideas<i class="twa twa-bulb"></i><i class="twa twa-bulb"></i><i class="twa twa-bulb"></i></h3>
+    			
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <p class="lead">10 dollars 
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="GR69MGRYSL65W">
+          <input type="submit" class="btn btn-primary btn-raised btn-lg" value="Buy three" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </p>
+          </form>
+
 
       	</div>
+        <div class="col-sm-12">
+          <p>Quantities limited... just not sure exactly how limited</p>
+        </div>
+
         </div>
         </center>
         <hr />
@@ -64,7 +87,7 @@
       <div class="row">
         <div class="col-sm-12">
           <h2>How it works</h2>
-          <p class="lead">Owning a fresh new startup idea has never been easiers</p>
+          <p class="lead">Owning a fresh new startup idea has never been easier</p>
           <hr />
         </div>
       </div>
@@ -179,49 +202,6 @@
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-	<script>
-		(function() {
-	        Stripe.setPublishableKey('YOUR PUBLISHABLE KEY');
-	    })();
-	</script>
-    <script src="https://checkout.stripe.com/checkout.js"></script>
-
-    <script>
-	  var handler = StripeCheckout.configure({
-	    key: 'pk_test_M8veW0PSlYz4ttZTcKNbKM3X',
-	    image: '../img/1f4a1.png',
-	    token: function(token) {
-	      // Use the token to create the charge with a server-side script.
-	      // You can access the token ID with `token.id`
-	    }
-	  });
-
-	  $('#oneIdea').on('click', function(e) {
-	    // Open Checkout with further options
-	    handler.open({
-	      name: 'ideasex',
-	      description: 'One startup idea',
-	      amount: 500
-	    });
-	    e.preventDefault();
-	  });
-
-	  $('#threeIdeas').on('click', function(e) {
-	    // Open Checkout with further options
-	    handler.open({
-	      name: 'ideasex',
-	      description: 'Three startup ideas',
-	      amount: 1000
-	    });
-	    e.preventDefault();
-	  });
-
-	  // Close Checkout on page navigation
-	  $(window).on('popstate', function() {
-	    handler.close();
-	  });
-	</script>
 
 
     <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
