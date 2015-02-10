@@ -1,5 +1,5 @@
 <head>
-	<script>
+  <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -21,9 +21,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Material theme -->
-    <link href='../bower_components/bootstrap-material-design/dist/css/material-wfont.min.css' rel="stylesheet">
+    <link href='../../bower_components/bootstrap-material-design/dist/css/material-wfont.min.css' rel="stylesheet">
 
-    <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">  
+    <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/ripples.min.css"> 
+
+    <!-- Twemoji Awesome -->
+    <link href='../../css/twemoji-awesome.css' rel="stylesheet"> 
 
     <!-- JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -34,15 +37,32 @@
 </head>
 <body>
 
+  <div class = "navbar navbar-fixed-top" style="background: rgba(0,0,0,0);">
+      <div class = "container">
+        <div class="row">
+        <center>
+          <hr />
+          <a href="https://www.ideasex.org/prompts/yc"><div class="btn btn-flat">YC RFS Edition</div></a>
+          <a href="https://www.ideasex.org/prompts/a16z"><div class="btn btn-flat active">A16Z Edition</div></a>
+          <a href="https://www.ideasex.org/prompts"><div class="btn btn-flat">All Prompts</div></a>
+          <hr />
+        </center>
+      </div>
+    </div>
 
-	<div class="container" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 750px">
-		<center>
-			<p class="lead" id="prompt">Click square button to generate a prompt</p>
-      <button type="button" class="btn btn-primary" onClick="changePrompt()"><i class="fa fa-refresh"></i></button>
-      <button type="button" class="btn btn-flat" data-toggle="modal" data-target="#aboutModal"><i class="fa fa-question"></i></button>
-      <hr />
-    </center>
-	</div>
+
+  
+  <div class="container" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 750px">
+
+    <div class="row" >
+      <center>
+        <p class="lead" id="prompt">Click the chick to generate a prompt</p>
+        <button type="button" class="btn btn-primary" onClick="changePrompt(a16z_industries)"><i class="twa twa-hatching-chick"></i></button>
+        <button type="button" class="btn btn-flat" data-toggle="modal" data-target="#aboutModal"><i class="fa fa-question"></i></button>
+        <hr />
+      </center>
+    </div>
+  </div>
 
  
  
@@ -87,11 +107,11 @@
     </div>
 
 
-	<!-- Footer -->
-	<div class = "navbar navbar-fixed-bottom" style="background: rgba(0,0,0,0);">
+  <!-- Footer -->
+  <div class = "navbar navbar-fixed-bottom" style="background: rgba(0,0,0,0);">
       <div class = "container">
         <center>
-        	Startup Idea Prompts // Made with love by <a href="http://www.tonysheng.com">@tonysheng</a>
+          <a href="http://www.ideasex.org">ideasex</a> // Startup Idea Prompts // Made with <i class="twa twa-heart-eyes-cat"></i> by <a href="http://www.tonysheng.com">@tonysheng</a>
         </center>
       </div>
     </div>
@@ -102,8 +122,8 @@
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
-    <script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="../../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script src="../../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
     <script>
         $(document).ready(function() {
             $.material.init();
@@ -111,6 +131,6 @@
     </script>
   
     <!-- prompt function -->
-    <script src="js/prompt.js"></script>
+    <script src="../js/prompt.js"></script>
 </body>
-	
+  
