@@ -25,6 +25,9 @@
 
     <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">  
 
+    <!-- twemoji -->
+    <link href='css/twemoji-awesome.css' rel="stylesheet"> 
+
     <!-- JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
@@ -35,38 +38,29 @@
 <body>
 
 
-	<div class="container" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 750px">
+	<div class="container" style="position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); max-width: 750px">
 		<center>
-			<p class="lead" id="prompt">Coming soon...</p>
-      <button type="button" class="btn btn-primary" onClick="preLaunch()"><i class="fa fa-refresh"></i></button>
-      <button type="button" class="btn btn-flat" data-toggle="modal" data-target="#aboutModal"><i class="fa fa-question"></i></button>
-      <hr />
+			<div class="row">
+        <a href="https://www.ideasex.org/prompts"><div class="col-md-4">
+          <i class="twa twa-hatching-chick twa-5x"></i>
+          <p class="lead"><br />Hatch</p>
+          <p>Startup idea procreation using potent prompts</p>
+        </div></a>
+        <div class="col-md-4">
+          <i class="twa twa-hatched-chick twa-5x"></i>
+          <p class="lead"><br />Nurture</p>
+          <p>Develop promising ideas with tools and resources to guide your thinking (coming soon)</p>
+        </div>
+        <div class="col-md-4">
+          <i class="twa twa-chicken twa-5x"></i>
+          <p class="lead"><br />Release</p>
+          <p>Tools to help develop your idea and release it to the wild (coming soon)</p>
+        </div>
+      </div>
     </center>
 	</div>
 
  
-
-    <!-- About Modal -->
-    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">What's this about then?</h4>
-          </div>
-          <div class="modal-body">
-            <p>It's not ready yet!</p>
-            <p>This little guy will grow to help people come up with big ideas by investigating the space in between two seemingly unrelated ones</p>
-            <p>If you want to get updates on the progress of ideasex, submit your email <a href="https://tinyletter.com/ideasex">here</a></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
 	<!-- Footer -->
 	<div class = "navbar navbar-fixed-bottom" style="background: rgba(0,0,0,0);">
       <div class = "container">

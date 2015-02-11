@@ -52,7 +52,7 @@
 
 
   
-  <div class="container" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 750px">
+  <div class="container" style="position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); max-width: 750px">
 
     <div class="row" >
       <center>
@@ -66,26 +66,6 @@
 
  
  
-    <!-- Submit modal -->
-    <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Submit an idea</h4>
-          </div>
-          <div class="modal-body">
-            <p>This simple little prompt generator is meant to spark big ideas. It takes high potential industries and encourages you to come up with startup ideas at the intersection of two of them.</p>
-            <p><input type="text" class="form-control" placeholder="A problem with INDUSTRY 2 is"></p>
-            <p><input type="text" class="form-control" placeholder="That we can solve with"></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary disabled" data-dismiss="modal">Submit</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- About Modal -->
     <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -97,7 +77,6 @@
           </div>
           <div class="modal-body">
             <p>This simple little prompt generator is meant to spark big ideas. It takes high potential industries and encourages you to come up with startup ideas at the intersection of two of them.</p>
-            <p>The industries come from YC's Request for Startups. This is as good a list as any if you're looking for the industries with ample opportunity to have an impact</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
