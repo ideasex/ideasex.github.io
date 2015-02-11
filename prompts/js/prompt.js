@@ -52,7 +52,7 @@ function changePrompt(industries) {
 // Pick random industry and name secondIndustry
 	var secondPrompt = industries[Math.floor(Math.random()*industries.length)];
 // Push prompt using string interpolation and DOM stuff
-	var prompt = ["How can we use ", "<a target='_blank' href=", firstPrompt[1], ">", firstPrompt[0], "</a> ", "to solve a problem in ", "<a target='_blank' href='https://www.ycombinator.com/rfs/", secondPrompt[1], "'>", secondPrompt[0], "</a>", "?"].join("");
+	var prompt = ["How can we use ", "<a target='_blank' href=", firstPrompt[1], ">", firstPrompt[0], "</a> ", "to solve a problem in ", "<a target='_blank' href=", secondPrompt[1], ">", secondPrompt[0], "</a>", "?"].join("");
 // Replace text node
 	return document.getElementById("prompt").innerHTML = prompt;
 }
